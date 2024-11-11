@@ -102,7 +102,7 @@ form.addEventListener('submit',(e)=>{
     e.preventDefault();
 })
 
-// copying password to clipboard
+// copying password to clipboards
 copyBtn.addEventListener("click",()=>{
     if (passwordDisplay!="" || passwordDisplay>=1){
         navigator.clipboard.writeText(passwordDisplay.textContent);

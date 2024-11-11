@@ -1,0 +1,242 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+font-size: 62.5%;
+}
+
+body {
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: "Poppins", sans-serif;
+font-weight: 300;
+font-style: italic;
+height: 100vh;
+background: linear-gradient(180deg, #14131B 0%, #08070B 100%);
+}
+
+.container {
+margin: 0 auto;
+width: 54rem;
+}
+
+h1 {
+font-size: 2.4rem;
+text-align: center;
+/* color: hsl(251, 9%, 53%); */
+color: white;
+margin-top: 3.4rem;
+margin-bottom: 2rem;
+}
+
+p {
+font-size: 1.8rem;
+color: hsl(252, 11%, 91%);
+}
+
+
+.password-field {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+height: 8rem;
+padding: 0 3.2rem;
+margin-bottom: 2.4rem;
+background-color: hsl(250, 9%, 13%);
+}
+
+.password-display {
+font-size: 3.2rem;
+color: hsl(252, 11%, 91%);
+}
+
+.password-placeholder {
+font-size: 3.2rem;
+color: hsl(252, 11%, 91%);
+opacity: 0.25;
+}
+
+.copy-wrapper {
+display: flex;
+align-items: center;
+gap: 1.6rem;
+color: white;
+}
+
+.copied-text {
+font-size: 1.8rem;
+text-transform: uppercase;
+color: hsl(127, 100%, 82%);
+}
+
+.copy-btn {
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+background: none;
+border: none;
+cursor: pointer;
+color: white;
+}
+.copy-wrapper i {
+font-size: 20px;
+}
+
+.password-settings {
+padding: 2.4rem 3.2rem 3.2rem;
+background-color: hsl(248, 10%, 15%);
+}
+
+.char-length {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+margin-bottom: 2.2rem;
+}
+
+.char-count {
+font-size: 3.2rem;
+color: hsl(127, 100%, 82%);
+}
+
+.char-length-slider {
+-webkit-appearance: none;
+margin-right: 15px;
+width: 100%;
+height: 7px;
+margin-bottom: 3.6rem;
+background: hsl(248, 15%, 11%);
+background-image: linear-gradient(hsl(127, 100%, 82%), hsl(127, 100%, 82%));
+background-size: 0% 100%;
+background-repeat: no-repeat;
+}
+
+.char-length-slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+height: 28px;
+width: 28px;
+border: 2px solid hsl(252, 11%, 91%);
+border-radius: 50%;
+background-color: hsl(252, 11%, 91%);
+cursor: pointer;
+}
+
+.char-include-group {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+
+margin-bottom: 3.4rem;
+}
+
+label {
+display: block;
+padding-left: 4.4rem;
+position: relative;
+}
+
+input[type=checkbox] {
+position: absolute;
+width: 0;
+height: 0;
+opacity: 0;
+}
+
+.custom-checkbox {
+display: flex;
+align-items: center;
+justify-content: center;
+
+position: absolute;
+top: 2px;
+left: 0;
+
+height: 2rem;
+width: 2rem;
+border: 2px solid hsl(252, 11%, 91%);
+cursor: pointer;
+}
+
+.custom-checkbox:hover {
+border-color: hsl(127, 100%, 82%);
+}
+
+input[type=checkbox]:checked ~ .custom-checkbox {
+border-color: black;
+background-image:url("fill-green-tick-mark-approved-check-mark-icon-symbols-symbol-for-website-computer-and-mobile-isolated-green-tick-verified-badge-icon-social-media-official-account-tick-symbol-vector.jpg");
+}
+
+
+.strength-box {
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-size: 1.8rem;
+text-transform: uppercase;
+color: hsl(251, 9%, 53%);
+margin-bottom: 3.2rem;
+padding: 0 3.2rem;
+height: 7.2rem;
+background-color: hsl(248, 15%, 11%);
+}
+
+.strength-rating {
+display: flex;
+align-items: center;
+gap: 1.4rem;
+}
+
+.strength-rating-text {
+font-size: 2.4rem;
+color: hsl(252, 11%, 91%);
+}
+
+.strength-rating-bars {
+display: flex;
+gap: 0.8rem;
+}
+
+.bar {
+width: 1rem;
+height: 2.8rem;
+border: 2px solid hsl(252, 11%, 91%);
+background: none;
+}
+
+
+.generate-btn {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 2.2rem;
+
+font-family: inherit;
+font-size: 1.8rem;
+text-transform: uppercase;
+color: hsl(247, 11%, 15%);
+
+width: 100%;
+padding: 1.9rem 0;
+border: 2px solid hsl(127, 100%, 82%);
+background-color: hsl(127, 100%, 82%);
+cursor: pointer;
+}
+
+.generate-btn:hover {
+color: hsl(127, 100%, 82%);
+background-color: hsl(247, 11%, 15%);
+}
+
+.generate-btn:hover path {
+fill: #a3ffae;
+}

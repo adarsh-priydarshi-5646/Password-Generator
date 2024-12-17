@@ -24,6 +24,8 @@ box-shadow: 0px 4px 30px rgba(255, 0, 255, 0.5);
 }
 
 .container {
+margin-top:20px;
+margin-bottom:20px;
 margin: 0 auto;
 width: 54rem;
 box-shadow: 0px 4px 30px rgba(255, 0, 255, 0.5);
@@ -231,7 +233,7 @@ border: 2px solid hsl(127, 100%, 82%);
 background-color: hsl(127, 100%, 82%);
 cursor: pointer;
 }
-.generate-btn button {
+button {
     width: auto;
     padding: 10px 20px;
     margin: 10px 0;
@@ -242,8 +244,7 @@ cursor: pointer;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
 }
-
-.generate-btn button:hover {
+button:hover {
     transform: scale(1.1);
     background: linear-gradient(135deg, #d633ff, #8000ff);
 }

@@ -19,7 +19,7 @@ font-family: "Poppins", sans-serif;
 font-weight: 300;
 font-style: italic;
 height: 100vh;
-background: linear-gradient(180deg, #14131B 0%, #08070B 100%);
+background: radial-gradient(circle, #1a1a1a, #000000);
 }
 
 .container {
